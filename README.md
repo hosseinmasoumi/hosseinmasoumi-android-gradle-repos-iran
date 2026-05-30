@@ -8,6 +8,8 @@
 
 ## 🚀 نحوه استفاده
 
+### ۱. تنظیم `settings.gradle.kts`
+
 فایل `settings.gradle.kts` پروژه‌ات را با محتوای زیر جایگزین یا آپدیت کن:
 
 ```kotlin
@@ -64,6 +66,28 @@ dependencyResolutionManagement {
 
 rootProject.name = "YourProjectName"
 include(":app")
+```
+
+---
+
+### ۲. تنظیم `gradle-wrapper.properties`
+
+در مسیر زیر فایل `gradle-wrapper.properties` را باز کن:
+
+```
+./gradle/wrapper/gradle-wrapper.properties
+```
+
+مقدار `distributionUrl` را از:
+
+```properties
+distributionUrl=https://services.gradle.org/distributions/gradle-8.13-bin.zip
+```
+
+به صورت زیر تغییر بده:
+
+```properties
+distributionUrl=https://maven.myket.ir/gradle/distributions/gradle-8.13-bin.zip
 ```
 
 ---
